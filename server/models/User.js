@@ -18,6 +18,10 @@ const UserSchema = new mongoose.Schema({
         type: String,
         enum: ['user', 'mechanic', 'admin'],
         default: 'user'
+    },
+    notificationsEnabled: {
+        type: Boolean,
+        default: true
     }
 })
 
