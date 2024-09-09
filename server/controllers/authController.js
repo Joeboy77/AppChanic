@@ -16,5 +16,8 @@ passport.use(new GoogleStrategy({
         user = new User({
             
         })    
+    } catch(err){
+        console.log(err);
+        
     }
 }))
